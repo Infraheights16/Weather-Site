@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="c.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+      <div class="toggle">
+        <span class = "c">°C</span>
+        <label class="switch">
+          <input type="checkbox" id="unitToggle" />
+          <span class="slider"></span>
+        </label>
+        <span class = "f">°F</span>
+      </div>
+    </div>
+    <div class="loader" id="loader"></div>
+    <div class="weather-card" id="weatherCard">
+      <div class="location" id="location"></div>
+      <div class="datetime" id="datetime"></div>
+      <div class="icon">
+        <img id="icon" src="" alt="" />
+      </div>
+      <div class="temp" id="temp"></div>
+      <div class="description" id="description"></div>
+      <div class="details">
+        <div>Feels like: <span id="feels"></span></div>
+        <div>Humidity: <span id="humidity"></span>%</div>
+        <div>Wind: <span id="wind"></span></div>
+      </div>
+      <div class="forecast" id="forecast"></div>
+    </div>
+  </div>
+  <script src="j.js"></script>
+</body>
+</html>
